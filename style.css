@@ -207,7 +207,7 @@ p {
   text-decoration: none;
 }
 
-Complete Button */ .complete-btn {
+.complete-btn {
   background-color: #28a745;
   color: white;
   border: none;
@@ -337,7 +337,7 @@ Complete Button */ .complete-btn {
   border-radius: 4px;
 }
 
-Category Header */ .category-header {
+.category-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -370,7 +370,7 @@ Category Header */ .category-header {
   cursor: pointer;
 }
 
-Delete Category Button */ .delete-category-btn {
+.delete-category-btn {
   background-color: #dc3545;
   color: white;
   border: none;
