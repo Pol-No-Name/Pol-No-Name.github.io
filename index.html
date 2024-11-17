@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <h1>Mini Tasks</h1>
+        <p>Manage your tasks, the simple way.</p>
+        <div class="task-input">
+          <input type="text" id="taskName" placeholder="Add Task..." />
+          <select id="taskCategory">
+            <option value="addNew">Add New...</option>
+          </select>
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div id="colorPickerWrapper" style="display: none;">
+          <label for="categoryColorPicker">Pick a colour:</label>
+          <input type="color" id="categoryColorPicker" />
+          <button id="confirmColorBtn">Confirm</button>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+          <div class="progress-text" id="progressText">0%</div>
+        </div>
+        <div class="filters">
+          <div class="outline"></div>
+          <button class="filter-btn" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+          <button class="filter-btn" data-filter="pending">Uncompleted</button>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+      <div class="chart-container">
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
